@@ -30,7 +30,6 @@ describe Calculator do
     it "returns the sum of two different arguments" do
       calc = Calculator.new
       expect(calc.add(1, 2)).to eq(3)
-    end
   end
 
   describe '#factorial' do
