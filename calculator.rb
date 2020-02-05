@@ -4,7 +4,9 @@ require "rspec/autorun"
 # calc.add(5, 10) # => 15
 
 class Calculator
-
+  def add(a, b)
+    a + b
+  end
 end
 
 # the string below is purely documentation
@@ -15,6 +17,10 @@ describe Calculator do
     it "returns the sum of its two arguments" do
       calc = Calculator.new
       expect(calc.add(5, 10)).to eq(15)
+    end
+
+    it "returns the sum of two different arguments" do
+
     end
   end
 end
